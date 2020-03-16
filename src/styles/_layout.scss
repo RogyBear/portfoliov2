@@ -1,0 +1,33 @@
+:root {
+	--main-bg-color: #1a1b1d;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+	// scroll-behavior: smooth;
+	// -webkit-overflow-scrolling: touch;
+}
+body {
+	background-color: var(--main-bg-color);
+	color: #f0f0f0;
+}
+
+.fade-enter {
+	opacity: 0;
+}
+.fade-enter-active {
+	opacity: 1;
+	transition: opacity 300ms ease-in;
+}
+.fade-exit {
+	opacity: 1;
+}
+
+.fade-exit-active {
+	opacity: 0;
+	transition: opacity 300ms ease-out;
+}

@@ -1,0 +1,41 @@
+// Animation Classes
+.fade-in-left {
+	animation: fade-in-left 1.5s forwards;
+	// animation: name duration timing-function delay iteration-count direction fill-mode;
+}
+.fade-in-right {
+	animation: fade-in-right 1s forwards;
+}
+
+.width-expand {
+	animation: width-expand 2s forwards;
+}
+// Animation Keyframes
+@keyframes fade-in-left {
+	0% {
+		opacity: 0;
+		transform: matrix(1, 0, 0, 1, -50, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+}
+@keyframes fade-in-right {
+	0% {
+		opacity: 0;
+		transform: matrix(1, 0, 0, 1, 50, 0);
+	}
+	100% {
+		opacity: 1;
+		transform: matrix(1, 0, 0, 1, 0, 0);
+	}
+}
+@keyframes width-expand {
+	0% {
+		width: 0%;
+	}
+	100% {
+		width: 100%;
+	}
+}

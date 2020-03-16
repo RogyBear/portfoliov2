@@ -1,0 +1,88 @@
+//Animation Definitions
+@keyframes move {
+	0% {
+	}
+	100% {
+		top: 65px;
+		left: 100px;
+		width: 90px;
+	}
+}
+
+@keyframes fill {
+	0% {
+	}
+	100% {
+		fill: #f0f0f0;
+	}
+}
+
+@keyframes fade {
+	0% {
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+//Animation classes/ ids
+
+#move {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	position: fixed;
+	width: 800px;
+	z-index: 200;
+	animation: move 1s 1.3s forwards;
+}
+.moveFinish {
+	position: fixed;
+	top: 65px;
+	left: 100px;
+	transform: translate(-50%, -50%);
+	width: 90px;
+	z-index: 10;
+}
+.fill {
+	animation: fill 1s 1.3s forwards;
+}
+.filler {
+	fill: #f0f0f0 !important;
+}
+
+.fade {
+	animation: fade 1.8s 1s forwards;
+}
+// static classes/ ids
+.logo-bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--main-bg-color);
+	z-index: 199;
+}
+
+@media screen and (max-width: 1100px) {
+	#move {
+		width: 600px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#move {
+		width: 500px;
+	}
+}
+@media screen and (max-width: 550px) {
+	#move {
+		width: 400px;
+	}
+}
+@media screen and (max-width: 450px) {
+	#move {
+		width: 300px;
+	}
+}

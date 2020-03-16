@@ -1,0 +1,209 @@
+.home {
+	font-family: 'Montserrat';
+	padding-top: 130px;
+	&__section-one {
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		margin: 0 auto;
+
+		&__text {
+			position: fixed;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			width: 1330px;
+			height: 480px;
+			line-height: 1;
+			letter-spacing: 1px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+			font-weight: 800;
+			cursor: default;
+
+			&__hello {
+				font-family: 'Caveat';
+				font-size: 50px;
+				align-self: flex-start;
+				margin-left: 150px;
+			}
+			&__front-end {
+				font-size: 140px;
+				align-self: flex-start;
+			}
+			&__web-developer {
+				font-size: 140px;
+				align-self: flex-end;
+				color: transparent;
+				-webkit-text-stroke: 2px #f0f0f0;
+
+				// &__w,
+				&__e {
+					transition: .2s;
+					&:hover {
+						-webkit-text-stroke: 2px rgb(31, 105, 218);
+						transition: .2s;
+						color: rgb(31, 105, 218);
+					}
+				}
+			}
+			&__portfolio-text {
+				font-family: 'Caveat';
+				font-size: 50px;
+				align-self: flex-end;
+				margin-right: 200px;
+			}
+		}
+	}
+}
+
+//Media Queries
+
+@media screen and (max-width: 1400px) {
+	.home {
+		&__section-one {
+			&__text {
+				width: 1100px;
+				&__hello {
+					margin-left: 0;
+					align-self: initial;
+				}
+				&__portfolio-text {
+					margin-right: 0;
+				}
+				&__front-end,
+				&__web-developer {
+					font-size: 120px;
+				}
+				&__text {
+				}
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1150px) {
+	.home {
+		&__section-one {
+			&__text {
+				width: 840px;
+				height: 410px;
+				&__hello,
+				&__portfolio-text {
+					font-size: 40px;
+				}
+
+				&__front-end,
+				&__web-developer {
+					font-size: 100px;
+				}
+				&__text {
+				}
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 890px) {
+	.home {
+		&__section-one {
+			&__text {
+				width: 671px;
+				height: 310px;
+				&__hello,
+				&__portfolio-text {
+					font-size: 40px;
+				}
+
+				&__front-end,
+				&__web-developer {
+					font-size: 80px;
+				}
+				&__text {
+				}
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 710px) {
+	.home {
+		&__section-one {
+			&__text {
+				width: 90%;
+				height: 240px;
+				&__hello,
+				&__portfolio-text {
+					font-size: 30px;
+				}
+
+				&__front-end,
+				&__web-developer {
+					font-size: 60px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 562px) {
+	.home {
+		&__section-one {
+			&__text {
+				height: 190px;
+				&__hello,
+				&__portfolio-text {
+					font-size: 20px;
+				}
+
+				&__front-end,
+				&__web-developer {
+					font-size: 50px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 474px) {
+	.home {
+		&__section-one {
+			&__text {
+				&__front-end,
+				&__web-developer {
+					font-size: 40px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.home {
+		&__section-one {
+			&__text {
+				height: 150px;
+				&__hello,
+				&__portfolio-text {
+					font-size: 18px;
+				}
+
+				&__front-end,
+				&__web-developer {
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
