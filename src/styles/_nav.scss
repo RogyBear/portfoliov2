@@ -15,7 +15,6 @@
 	&__arrow {
 		&__translation {
 			display: flex;
-
 			font-family: 'Caveat';
 			font-size: 20px;
 			position: fixed;
@@ -37,12 +36,17 @@
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		width: 400px;
+		width: 565px;
 		font-family: 'Montserrat';
 		font-weight: 500;
+		align-items: center;
+		// :last-child {
+		// 	border: 1px solid;
+		// }
 		&__item {
 			list-style: none;
 			position: relative;
+
 			&__link {
 				letter-spacing: 1px;
 				text-decoration: none;
@@ -79,6 +83,10 @@
 
 @media screen and (max-width: 950px) {
 	.nav {
+		padding: {
+			left: 0;
+			right: 0;
+		}
 		&__arrow {
 			&__translation {
 				display: none;

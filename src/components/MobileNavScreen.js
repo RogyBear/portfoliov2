@@ -2,6 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { NavContext } from '../contexts/NavContext';
 import { LanguageContext, LanguageProvider } from '../contexts/LanguageContext';
+import pdf from '../static/resume.pdf';
 export default function MobileNavScreen() {
 	const { isOpen, setIsOpen } = useContext(NavContext);
 	const { lang, english, russian, handleLang } = useContext(LanguageContext);
@@ -48,7 +49,14 @@ export default function MobileNavScreen() {
 					</Link>
 				</li>
 				<li className={isOpen ? 'mobile--screen__list__item scaler' : ' mobile--screen__list__item'}>
-					{lang ? en.resume : ru.resume}
+					<Link
+						to="/resume"
+						onClick={() => {
+							setIsOpen(!isOpen);
+						}}
+					>
+						{lang ? 'Resume' : 'Резюме'}
+					</Link>
 				</li>
 			</ul>
 		</div>

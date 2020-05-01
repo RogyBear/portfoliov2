@@ -4,6 +4,7 @@ import './styles/main.scss';
 import Layout from './components/Layout';
 import Home from './components/Home';
 import About from './components/About';
+import Resume from './components/Resume';
 import Details from './components/Details';
 import { LanguageProvider } from './contexts/LanguageContext';
 import { LogoProvider } from './contexts/LogoContext';
@@ -24,6 +25,8 @@ function App() {
 											<CSSTransition key={location.key} timeout={600} classNames="fade">
 												<Switch location={location}>
 													<Route exact={true} path="/about" component={About} />
+
+													<Route exact={true} path="/resume" component={Resume} />
 
 													<Route exact={true} path="/:id" component={Details} />
 

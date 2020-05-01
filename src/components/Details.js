@@ -66,19 +66,22 @@ export default function Details(props) {
 						{lang ? en.code : ru.code}
 					</a>
 				</div>
-				<div className="details__section section-one">
+				<div className="details__section sectionOne">
 					<div className="details__section__text">
 						<p className="details__section__text__paragraph">
 							{' '}
 							{lang ? en[newPath].sectionOne.description : ru[newPath].sectionOne.description}
 						</p>
 					</div>
-					<div className="details__section__img sectionOne__img">
-						<img
+					<img
+						className="details__section__img sectionOne__img"
+						src={require(`../static/${[ newPath ]}Iphone.png`)}
+					/>
+					{/* <img
 							src={require(`../static/${[ newPath ]}Iphone.png`)}
 							className="details__section__img__content sectionOne__img__content"
 						/>
-					</div>
+					</div> */}
 				</div>
 				<div className="details__section sectionTwo">
 					<div
@@ -98,7 +101,7 @@ export default function Details(props) {
 						</p>
 					</div>
 					<Waypoint onEnter={handleWaypointOne}>
-						<div
+						<img
 							className={
 								style.sectionTwo ? (
 									'details__section__img sectionTwo__img fade-in-left'
@@ -107,15 +110,16 @@ export default function Details(props) {
 								)
 							}
 							style={style.sectionTwo === true ? { opacity: 1 } : {}}
-						>
-							<img
-								src={require(`../static/${[ newPath ]}Tablet.png`)}
+							src={require(`../static/${[ newPath ]}Tablet.png`)}
+						/>
+						{/* <img
+								
 								className="details__section__img__content sectionTwo__img__content"
-							/>
-						</div>
+							/> */}
+						{/* </div> */}
 					</Waypoint>
 				</div>
-				<div className="details__section section-three">
+				<div className="details__section sectionThree">
 					<div
 						className={
 							style.sectionThree ? (
@@ -148,7 +152,7 @@ export default function Details(props) {
 						</ul>
 					</div>
 					<Waypoint onEnter={handleWaypointTwo}>
-						<div
+						<img
 							className={
 								style.sectionThree ? (
 									'details__section__img sectionThree__img fade-in-right'
@@ -156,12 +160,13 @@ export default function Details(props) {
 									'details__section__img sectionThree__img'
 								)
 							}
-						>
-							<img
-								src={require(`../static/${[ newPath ]}Desktop.png`)}
-								className="details__section__img__content sectionThree__img__content"
-							/>
-						</div>
+							src={require(`../static/${[ newPath ]}Desktop.png`)}
+						/>
+						{/* <img
+							src={require(`../static/${[ newPath ]}Desktop.png`)}
+							className="details__section__img__content sectionThree__img__content"
+						/> */}
+						{/* </div> */}
 					</Waypoint>
 				</div>
 			</div>

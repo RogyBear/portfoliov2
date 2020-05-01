@@ -7,7 +7,7 @@ import { LogoContext } from '../contexts/LogoContext';
 const Logo = () => {
 	const { load, setLoad } = useContext(LogoContext);
 	const pathname = useLocation();
-	console.log(pathname);
+
 	return (
 		<Fragment>
 			<div

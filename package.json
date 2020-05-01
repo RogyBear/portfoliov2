@@ -1,45 +1,46 @@
 {
-  "name": "portfolio-v2",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.4.1",
-    "@testing-library/user-event": "^7.2.1",
-    "axios": "^0.19.2",
-    "delay": "^4.3.0",
-    "node-sass": "^4.13.1",
-    "react": "^16.13.0",
-    "react-dom": "^16.13.0",
-    "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.0",
-    "react-spring": "^8.0.27",
-    "react-tilt": "^0.1.4",
-    "react-transition-group": "^4.3.0",
-    "react-use-gesture": "^7.0.4",
-    "react-vivus": "0.0.2",
-    "react-waypoint": "^9.0.2",
-    "vivus": "^0.4.5"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "portfolio-v2",
+	"version": "0.1.0",
+	"private": true,
+	"dependencies": {
+		"@emotion/core": "^10.0.28",
+		"@testing-library/jest-dom": "^4.2.4",
+		"@testing-library/react": "^9.4.1",
+		"@testing-library/user-event": "^7.2.1",
+		"axios": "^0.19.2",
+		"delay": "^4.3.0",
+		"gulp-autoprefixer": "^7.0.1",
+		"gulp-babel": "^8.0.0",
+		"gulp-postcss": "^8.0.0",
+		"js-file-download": "^0.4.10",
+		"node-sass": "^4.13.1",
+		"react": "^16.13.0",
+		"react-dom": "^16.13.0",
+		"react-router-dom": "^5.1.2",
+		"react-scripts": "3.4.0",
+		"react-spinners": "^0.8.1",
+		"react-spring": "^8.0.27",
+		"react-tilt": "^0.1.4",
+		"react-transition-group": "^4.3.0",
+		"react-use-gesture": "^7.0.4",
+		"react-vivus": "0.0.2",
+		"react-waypoint": "^9.0.2",
+		"vivus": "^0.4.5"
+	},
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject"
+	},
+	"eslintConfig": {
+		"extends": "react-app"
+	},
+	"browserslist": {
+		"production": [ "since 2010" ],
+		"development": [ "last 1 chrome version", "last 1 firefox version", "last 1 safari version" ]
+	},
+	"devDependencies": {
+		"gulp": "^4.0.2"
+	}
 }

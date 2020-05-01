@@ -1,9 +1,13 @@
 import React, { useContext } from 'react';
 import { LanguageContext } from '../contexts/LanguageContext';
+import axios from 'axios';
+import FileDownload from 'js-file-download';
+import pdf from '../static/resume.pdf';
 export default function Footer() {
 	const { lang, english, russian } = useContext(LanguageContext);
 	const en = english.main;
 	const ru = russian.main;
+
 	return (
 		<footer className="footer">
 			<div className="footer__translation">
@@ -22,19 +26,21 @@ export default function Footer() {
 				</svg>
 				<p className="footer__translation__text">{lang ? en.resume : ru.resume}</p>
 			</div>
-			<div className="footer__circle">
-				<div className="footer__circle__square">
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
-					<div className="footer__circle__dot" />
+			<a download href={pdf}>
+				<div className="footer__circle">
+					<div className="footer__circle__square">
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+						<div className="footer__circle__dot" />
+					</div>
 				</div>
-			</div>
+			</a>
 		</footer>
 	);
 }

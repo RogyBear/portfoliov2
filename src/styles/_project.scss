@@ -1,5 +1,5 @@
 .project {
-	height: calc(100vh - 130px);
+	height: 100%;
 	padding: {
 		top: 130px;
 	}
@@ -21,11 +21,16 @@
 	&__wrapper {
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
+
 		width: 1400px;
 		height: 620px;
+		width: 74vw;
+		height: 29vw;
 	}
 	&__list {
 		font-size: 85px;
+		font-size: 4.6vw;
 		font-weight: 800;
 		height: 100%;
 		display: flex;
@@ -102,9 +107,12 @@
 		flex-direction: column;
 		justify-content: space-between;
 		width: 500px;
+		width: 25vw;
+		height: 100%;
 		&__picture {
 			position: relative;
 			height: 500px;
+			height: 22vw;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -159,13 +167,8 @@
 
 @media screen and (max-width: 1650px) {
 	.project {
-		&__wrapper {
-			width: 80%;
-			height: 560px;
-		}
-		&__list {
-			font-size: 70px;
-		}
+	
+	
 		&__showcase {
 			&__picture {
 				&__Iphone {
@@ -182,163 +185,163 @@
 	}
 }
 
-@media screen and (max-width: 1470px) {
-	.project {
-		&__wrapper {
-			height: 530px;
-		}
-		&__list {
-			font-size: 50px;
-		}
-		&__showcase {
-			&__picture {
-				&__Iphone {
-					height: 80%;
-				}
-				&__Tablet {
-					height: 80%;
-				}
-				&__Desktop {
-					height: 60%;
-				}
-			}
-		}
-	}
-}
+// @media screen and (max-width: 1470px) {
+// 	.project {
+// 		&__wrapper {
+// 			height: 530px;
+// 		}
+// 		&__list {
+// 			font-size: 50px;
+// 		}
+// 		&__showcase {
+// 			&__picture {
+// 				&__Iphone {
+// 					height: 80%;
+// 				}
+// 				&__Tablet {
+// 					height: 80%;
+// 				}
+// 				&__Desktop {
+// 					height: 60%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-@media screen and (max-width: 1240px) {
-	.project {
-		&__wrapper {
-			height: 410px;
-			width: 76%;
-		}
-		&__list {
-			font-size: 50px;
-		}
-		&__showcase {
-			width: 350px;
-			&__picture {
-				height: 350px;
-				&__Iphone {
-					height: 90%;
-				}
-				&__Tablet {
-					height: 90%;
-				}
-				&__Desktop {
-					height: 70%;
-				}
-			}
-		}
-	}
-}
+// @media screen and (max-width: 1240px) {
+// 	.project {
+// 		&__wrapper {
+// 			height: 410px;
+// 			width: 76%;
+// 		}
+// 		&__list {
+// 			font-size: 50px;
+// 		}
+// 		&__showcase {
+// 			width: 350px;
+// 			&__picture {
+// 				height: 350px;
+// 				&__Iphone {
+// 					height: 90%;
+// 				}
+// 				&__Tablet {
+// 					height: 90%;
+// 				}
+// 				&__Desktop {
+// 					height: 70%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-@media screen and (max-width: 1110px) {
-	.project {
-		&__wrapper {
-			height: 370px;
-			width: 73%;
-		}
-		&__list {
-			font-size: 35px;
-			&__item {
-				&__btn {
-					font-size: 15px;
-				}
-			}
-		}
-		&__showcase {
-			width: 350px;
-			&__picture {
-				height: 350px;
-				&__Iphone {
-					height: 90%;
-				}
-				&__Tablet {
-					height: 90%;
-				}
-				&__Desktop {
-					height: 60%;
-				}
-			}
-		}
-	}
-}
+// @media screen and (max-width: 1110px) {
+// 	.project {
+// 		&__wrapper {
+// 			height: 370px;
+// 			width: 73%;
+// 		}
+// 		&__list {
+// 			font-size: 35px;
+// 			&__item {
+// 				&__btn {
+// 					font-size: 15px;
+// 				}
+// 			}
+// 		}
+// 		&__showcase {
+// 			width: 350px;
+// 			&__picture {
+// 				height: 350px;
+// 				&__Iphone {
+// 					height: 90%;
+// 				}
+// 				&__Tablet {
+// 					height: 90%;
+// 				}
+// 				&__Desktop {
+// 					height: 60%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-@media screen and (max-width: 950px) {
-	.project {
-		&__wrapper {
-			height: 370px;
-			width: 90%;
-		}
-		&__list {
-			font-size: 35px;
-		}
-		&__showcase {
-			width: 350px;
-			&__picture {
-				height: 350px;
-				&__Iphone {
-					height: 90%;
-				}
-				&__Tablet {
-					height: 90%;
-				}
-				&__Desktop {
-					height: 60%;
-				}
-			}
-		}
-	}
-}
+// @media screen and (max-width: 950px) {
+// 	.project {
+// 		&__wrapper {
+// 			height: 370px;
+// 			width: 90%;
+// 		}
+// 		&__list {
+// 			font-size: 35px;
+// 		}
+// 		&__showcase {
+// 			width: 350px;
+// 			&__picture {
+// 				height: 350px;
+// 				&__Iphone {
+// 					height: 90%;
+// 				}
+// 				&__Tablet {
+// 					height: 90%;
+// 				}
+// 				&__Desktop {
+// 					height: 60%;
+// 				}
+// 			}
+// 		}
+// 	}
+// }
 
-@media screen and (max-width: 760px) {
-	.project {
-		&__wrapper {
-			height: 500px;
-			width: 100%;
-			display: flex;
-			justify-content: center;
-		}
-		&__list {
-			font-size: 60px;
+// @media screen and (max-width: 760px) {
+// 	.project {
+// 		&__wrapper {
+// 			height: 500px;
+// 			width: 100%;
+// 			display: flex;
+// 			justify-content: center;
+// 		}
+// 		&__list {
+// 			font-size: 60px;
 
-			&__item {
-				&__btn {
-					font-size: 20px;
-				}
-			}
-		}
-		&__showcase {
-			display: none;
-		}
-	}
-}
-@media screen and (max-width: 580px) {
-	.project {
-		&__list {
-			font-size: 48px;
-		}
-	}
-}
-@media screen and (max-width: 464px) {
-	.project {
-		&__list {
-			height: 80%;
-			font-size: 40px;
-		}
-	}
-}
-@media screen and (max-width: 380px) {
-	.project {
-		&__list {
-			height: 70%;
-			font-size: 32px;
-			&__item {
-				&__btn {
-					font-size: 15px;
-				}
-			}
-		}
-	}
-}
+// 			&__item {
+// 				&__btn {
+// 					font-size: 20px;
+// 				}
+// 			}
+// 		}
+// 		&__showcase {
+// 			display: none;
+// 		}
+// 	}
+// }
+// @media screen and (max-width: 580px) {
+// 	.project {
+// 		&__list {
+// 			font-size: 48px;
+// 		}
+// 	}
+// }
+// @media screen and (max-width: 464px) {
+// 	.project {
+// 		&__list {
+// 			height: 80%;
+// 			font-size: 40px;
+// 		}
+// 	}
+// }
+// @media screen and (max-width: 380px) {
+// 	.project {
+// 		&__list {
+// 			height: 70%;
+// 			font-size: 32px;
+// 			&__item {
+// 				&__btn {
+// 					font-size: 15px;
+// 				}
+// 			}
+// 		}
+// 	}
+// }

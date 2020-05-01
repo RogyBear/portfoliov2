@@ -56,8 +56,10 @@ export default function Home(props) {
 					<p className="home__section-one__text__portfolio-text">{lang ? en.lineFour : ru.lineFour}</p>
 				</div>
 			</section>
+
 			<Project />
 			<Contact />
+
 			<ScrollToTop />
 		</main>
 	);

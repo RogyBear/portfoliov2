@@ -10,7 +10,7 @@ export default function Nav() {
 	return (
 		<nav className="nav">
 			<div className="nav__arrow">
-				<div className="nav__arrow__translation">
+				<div className="nav__arrow__translation" style={lang ? {} : {right: '150px'}}>
 					<svg
 						className="nav__arrow__translation__arrow"
 						width="67"
@@ -29,9 +29,13 @@ export default function Nav() {
 			</div>
 
 			<ul className="nav__list">
+				<li className="nav__list__item">
+					<Link className="nav__list__item__link" to="/about">
+						{lang ? en.about : ru.about}
+					</Link>
+				</li>
 				<li className="nav__list__item language-change" onClick={handleLang}>
 					<button className="nav__list__item__link btn btn-en">{!lang ? 'EN /' : 'РУ /'}</button>
-
 					<button className="nav__list__item__link btn btn-ru">{lang ? 'EN ' : 'РУ'}</button>
 				</li>
 				<li className="nav__list__item">
@@ -40,8 +44,8 @@ export default function Nav() {
 					</a>
 				</li>
 				<li className="nav__list__item">
-					<Link className="nav__list__item__link" to="/about">
-						{lang ? en.about : ru.about}
+					<Link className="nav__list__item__link resume" to="/resume">
+						{lang ? 'Resume' : 'Резюме'}
 					</Link>
 				</li>
 			</ul>

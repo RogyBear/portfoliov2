@@ -70,13 +70,13 @@ export default function Project(props) {
 							}
 						>
 							<a href="https://www.2birdswedding.com/" className="project__list__item__btn__link">
-								Demo
+								{lang ? en.demo : ru.demo}
 							</a>
 							<a href="https://github.com/RogyBear/2Birds" className="project__list__item__btn__link">
-								Code
+								{lang ? en.code : ru.code}
 							</a>
 							<Link to="/2birdswedding" style={{ textDecoration: 'none', color: '#f0f0f0' }}>
-								<span className="project__list__item__btn__link">Details</span>
+								<span className="project__list__item__btn__link">{lang ? en.details : ru.details}</span>
 							</Link>
 						</div>
 					</li>
@@ -112,13 +112,13 @@ export default function Project(props) {
 							}
 						>
 							<a href="https://www.blackjackcontracting.com/" className="project__list__item__btn__link">
-								Demo
+								{lang ? en.demo : ru.demo}
 							</a>
 							<a href="https://github.com/RogyBear/Blackjack" className="project__list__item__btn__link">
-								Code
+								{lang ? en.code : ru.code}
 							</a>
 							<Link to="/blackjack" style={{ textDecoration: 'none', color: '#f0f0f0' }}>
-								<span className="project__list__item__btn__link">Details</span>
+								<span className="project__list__item__btn__link">{lang ? en.details : ru.details}</span>
 							</Link>
 						</div>
 					</li>
@@ -154,13 +154,13 @@ export default function Project(props) {
 							}
 						>
 							<a href="http://evgeniykonin.ru/" className="project__list__item__btn__link">
-								Demo
+								{lang ? en.demo : ru.demo}
 							</a>
 							<a href="https://github.com/RogyBear/Konin" className="project__list__item__btn__link">
-								Code
+								{lang ? en.code : ru.code}
 							</a>
 							<Link to="/konin" style={{ textDecoration: 'none', color: '#f0f0f0' }}>
-								<span className="project__list__item__btn__link">Details</span>
+								<span className="project__list__item__btn__link">{lang ? en.details : ru.details}</span>
 							</Link>
 						</div>
 					</li>

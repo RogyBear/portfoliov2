@@ -1,0 +1,270 @@
+.resume {
+	font-family: 'Montserrat';
+	margin-top: 130px;
+	height: calc(100% + 130px);
+	&__wrapper {
+		width: 75vw;
+		margin: 0 auto;
+		padding-top: 80px;
+		display: flex;
+		flex-direction: column;
+
+		&__title {
+			align-self: center;
+			font-size: 90px;
+			font-size: 8vw;
+			line-height: 1;
+
+			font-weight: bolder;
+			span {
+				-webkit-text-stroke: 1px #fff;
+				color: transparent;
+			}
+		}
+		&__sub-title {
+			align-self: center;
+			font-size: 35px;
+			font-size: 2.1vw;
+
+			padding: {
+				bottom: 50px;
+			}
+		}
+		&__download-btn {
+			display: none;
+		}
+		&__col {
+			display: flex;
+			border-top: 1px solid #fff;
+			&__left {
+				flex: 70 70 0;
+			}
+			&__right {
+				flex: 30 30 0;
+
+				border-left: 1px solid #fff;
+				&__title {
+					margin-bottom: 15px;
+				}
+				&__tech {
+					display: flex;
+					flex-direction: column;
+					flex-wrap: wrap;
+					height: 275px;
+
+					&__item {
+						font-size: 20px;
+						white-space: pre-line;
+						margin: {
+							top: 10px;
+							left: 20px;
+						}
+						list-style: none;
+					}
+				}
+			}
+			&__left,
+			&__right {
+				padding: 0 20px;
+				&__title {
+					font-size: 55px;
+					font-size: 3.7vw;
+					font-weight: 300;
+					margin-top: 20px;
+					border-bottom: 1px solid #fff;
+				}
+				&__job {
+					margin-top: 25px;
+					font-size: 35px;
+					font-size: 2.3vw;
+					font-weight: 700;
+				}
+				&__dates {
+					font-size: 30px;
+					font-size: 2.1vw;
+				}
+				&__project {
+					font-size: 20px;
+					display: inline-block;
+					border-bottom: 1px solid #fff;
+					margin: {
+						top: 20px;
+						left: 20px;
+					}
+				}
+				&__duties {
+					margin-left: 40px;
+					font-size: 20px;
+					&__items {
+						margin-top: 10px;
+					}
+				}
+				&__duties-con {
+					font-size: 20px;
+					margin-left: 20px;
+					&__items-contact {
+						padding-top: 10px;
+						list-style: none;
+						:first-child {
+							font-weight: 700;
+							margin-bottom: 5px;
+						}
+					}
+				}
+				&__language {
+					font-weight: 700;
+					font-size: 20px;
+					padding-top: 10px;
+					margin: {
+						left: 20px;
+					}
+					span {
+						font-weight: 300;
+					}
+				}
+			}
+		}
+	}
+}
+
+// Media Queries
+
+@media screen and (max-width: 1080px) {
+	.resume {
+		&__wrapper {
+			&__col {
+				&__left,
+				&__right {
+					&__title {
+						font-size: 3.6vw;
+					}
+					&__job,
+					&__dates {
+						font-size: 2.3vw;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.resume {
+		&__wrapper {
+			width: 90vw;
+			&__sub-title {
+				padding: {
+					bottom: 20px;
+				}
+			}
+			&__download-btn {
+				display: flex;
+				align-self: center;
+				padding: 10px 20px;
+				border: 1px solid #fff;
+				background-color: #fff;
+				border-radius: 10px;
+				margin: {
+					bottom: 50px;
+				}
+				a {
+					text-decoration: none;
+					font-size: 20px;
+					color: var(--main-bg-color);
+				}
+			}
+			&__col {
+				flex-direction: column;
+				border: none;
+				&__left,
+				&__right {
+					&__title {
+						font-size: 6.5vw;
+					}
+					&__job,
+					&__dates {
+						font-size: 3vw;
+					}
+				}
+				&__right {
+					border: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.resume {
+		&__wrapper {
+			&__col {
+				&__left,
+				&__right {
+					&__job,
+					&__dates {
+						font-size: 3.5vw;
+					}
+					&__duties {
+						font-size: 2.4vw;
+					}
+					&__duties-con {
+						font-size: 2.4vw;
+					}
+					&__tech {
+						&__item {
+							font-size: 2.4vw;
+						}
+					}
+					&__project {
+						font-size: 2.7vw;
+					}
+					&__language {
+						font-size: 2.4vw;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 450px) {
+	.resume {
+		&__wrapper {
+			&__title {
+				font-size: 10vw;
+			}
+			&__download-btn {
+				padding: 5px 10px;
+				a {
+					font-size: 14px;
+				}
+			}
+			&__col {
+				&__left,
+				&__right {
+					&__job,
+					&__dates {
+						font-size: 4vw;
+					}
+					&__duties {
+						font-size: 3.1vw;
+					}
+					&__duties-con {
+						font-size: 3.1vw;
+					}
+					&__tech {
+						&__item {
+							font-size: 3.1vw;
+						}
+					}
+					&__project {
+						font-size: 3.5vw;
+					}
+					&__language {
+						font-size: 3.1vw;
+					}
+				}
+			}
+		}
+	}
+}

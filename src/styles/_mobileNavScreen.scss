@@ -25,6 +25,7 @@
 			list-style: none;
 			opacity: 0;
 			transition: 1s all;
+
 			a {
 				color: var(--main-bg-color);
 				text-decoration: none;
@@ -35,13 +36,7 @@
 			&:nth-child(even) {
 				transform: translateX(-200px);
 			}
-			&:last-child {
-				color: #f0f0f0;
-				background-color: var(--main-bg-color);
-				padding: 10px;
-				border-radius: 10px;
-				transform: none;
-			}
+			
 		}
 	}
 }

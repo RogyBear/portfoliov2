@@ -68,3 +68,9 @@
 		display: flex;
 	}
 }
+
+@media screen and (max-width: 500px) {
+	.mobile {
+		right: 37.5px;
+	}
+}
