@@ -7,7 +7,7 @@
 	background-color: #f0f0f0;
 	z-index: 100;
 	transform: scale(0);
-	transition: all 500ms cubic-bezier(.41, 1.13, .07, .4);
+	transition: all 500ms ease-out;
 	color: var(--main-bg-color);
 	font-size: 30px;
 	font-family: 'Montserrat';
@@ -36,7 +36,6 @@
 			&:nth-child(even) {
 				transform: translateX(-200px);
 			}
-			
 		}
 	}
 }

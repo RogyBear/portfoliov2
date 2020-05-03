@@ -205,7 +205,7 @@ export function LanguageProvider(props) {
 			jack: 'Jack',
 			evgeniy: 'Евгений',
 			konin: 'Конин',
-			mobile: 'Мобильный',
+			mobile: 'Моб.',
 			tablet: 'Планшет',
 			laptop: 'Ноутбук',
 			details: 'Подробости',
@@ -215,9 +215,9 @@ export function LanguageProvider(props) {
 
 		contact: {
 			c: 'К',
-			on: 'онт',
-			ta: 'а',
-			t: 'ты',
+			on: 'он',
+			ta: 'та',
+			t: 'т',
 			name: 'Имя',
 			email: 'почта',
 			subject: 'Тема',
