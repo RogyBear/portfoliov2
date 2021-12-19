@@ -73,7 +73,7 @@ export function LanguageProvider(props) {
       click: "Click here for Russian",
     },
     home: {
-      lineOne: "Hey! My name is Aaron and I'm a...",
+      lineOne: "Hola!! My name is Aaron and I'm a...",
       lineTwo: "Front-end",
       lineThree: "Web Developer ",
       lineFour: "...scroll down to see my portfolio ",
