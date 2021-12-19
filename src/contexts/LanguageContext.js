@@ -105,7 +105,7 @@ export function LanguageProvider(props) {
       send: "Your message was successfully sent",
     },
     about: {
-      hello: "Hola! My name is",
+      hello: "Hola! Me llamo Aaron",
       aaron: "Aaron",
       i: "I am a",
       frontEnd: "front end",
