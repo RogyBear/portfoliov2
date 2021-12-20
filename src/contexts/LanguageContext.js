@@ -74,7 +74,7 @@ export function LanguageProvider(props) {
     },
     home: {
       lineOne: "Hey! My name is Aaron and I'm a...",
-      lineTwo: "Front-end",
+      lineTwo: "Full Stack",
       lineThree: "Web Developer ",
       lineFour: "...scroll down to see my portfolio ",
     },
@@ -193,7 +193,7 @@ export function LanguageProvider(props) {
 
     home: {
       lineOne: "Привет! Меня зовут Арон, я...",
-      lineTwo: "Фронтенд-",
+      lineTwo: "Фулстак",
       lineThree: "Разработчик",
       lineFour: "...прокрутите вниз, чтобы посмотреть мое портфолио",
     },
